@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Fuel consumption</title>
+  </head>
+  <body>
+    <div
+      id="carousel-ID"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="3000"
+    >
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-ID" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-ID" data-slide-to="1"></li>
+        <li data-target="#carousel-ID" data-slide-to="2"></li>
+        <li data-target="#carousel-ID" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.gannett-cdn.com/media/2018/07/25/USATODAY/usatsports/247WallSt.com-247WS-481404-vintage-gas-pump.jpg"
+            class="d-block w-100"
+            alt="carousel image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fuel</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://wallpapers.com/images/high/4k-plane-in-the-sky-sraa8sshp7bou1p9.webp"
+            class="d-block w-100"
+            alt="carousel image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Air Planes</h5>
+            <p>Domestic flights - 255g of CO2 per passenger kilometer</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.nerdwallet.com/assets/blog/wp-content/uploads/2021/04/GettyImages-644951494-1440x864.jpg"
+            class="d-block w-100"
+            alt="carousel image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cars</h5>
+            <p>Cars - 192g of CO2 per passenger kilometer</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.nrdc.org/sites/default/files/styles/large_16x9_100/public/media-uploads/lms_4236-zf-1852-78615-1-075.jpg.jpg?itok=sW11t_9p"
+            class="d-block w-100"
+            alt="carousel image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Public transportation - 105g of CO2 per passenger</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carousel-ID"
+        role="button"
+        data-slide="prev"
+        ><span class="carousel-control-prev-icon" aria-hidden="true"></span
+        ><span class="sr-only">Previous</span></a
+      ><a
+        class="carousel-control-next"
+        href="#carousel-ID"
+        role="button"
+        data-slide="next"
+        ><span class="carousel-control-next-icon" aria-hidden="true"></span
+        ><span class="sr-only">Next</span></a
+      >
+    </div>
+    <div class="container" id="bsr-wrapper">
+      <p></p>
+      <h6>&nbsp &nbsp As global warming and climate change continue to be a rising issue, people are becoming increasingly aware of their carbon footprint and the impact their actions have on the environment and the ozone layer. One major contributor to carbon emissions is transportation, with vehicles releasing significant amounts of greenhouse gases into the atmosphere.
+      </h6>
+      <h6>&nbsp &nbsp To address this issue, this website allows users to compare the carbon footprint of different modes of transportation when traveling to a specific destination from South Bend. It provides information on the emissions, time taken, and distance traveled for various transportation options, such as driving, taking public transit, biking, or walking.
+      </h6>
+      <h6>&nbsp &nbsp By providing users with information about the carbon footprint of their transportation choices, individuals can make more informed decisions that are better for the environment.</h6>
+
+      <h2>Visualizations</h2>
+      <h6>The choropleth below shows the daily emissions of the domestic flights leaving from South Bend Airport:</h6>
+      
+      <iframe src="choropleth1.html" width="100%" height="600" frameBorder="0"></iframe>
+
+      <p>Georgia is the destination that has the greatest impact in daily emissions of CO2, meaning that there is a high frequency of flights to Gerogia that have a great amount of emissions.</p>
+
+
+
+
+
+      <h6>The choropleth below is a visualization of the frequency of flights from South Bend airpot</h6>
+      <iframe src="choropleth2.html" width="100%" height="600" frameBorder="0"></iframe>
+      <p>Unexpectedly the states surrounding South Bend (Ohio, Michigan) seem to have a lower frequency of daily flights compared to states that are relatively farther away (Georgia, North Carolina).</p>
+
+
+
+      <h6>The scatter plot below shows the relationship between distance and daily frequency of flights</h6>
+      <iframe src="scatterplot.html" width="100%" height="600" frameBorder="0"></iframe>
+
+      <p>The scatter plot shows that destinations with a distance greater than 1500 km always have lesser than one average flight a day.</p>
+      
+
+      <h6>The bar plots and pie chart below are a direct comparison of data between airplane and public transit for Chicago</h6>
+      <p>Chicago:</p>
+      <iframe src="Chicagotranairbarplot1.html" width="100%" height="800" frameBorder="0"></iframe>
+
+      <p>The bar plots suggests that using public transportation is the best option for this journey, as the total emissions and emissions per passenger are significantly lower when comparing them to an airplane journey. Additionally, the time spent travelling is only around 2 hours longer than an airplane</p>
+      <iframe src="Chicagotrainairpieplot.html" width="100%" height="400" frameBorder="0"></iframe>
+
+      <p>The pie chart additionally proves how much more emissions are produced by the airplane in comparison to the public transportation</p>
+
+      
+      <h5>The following visualizations are barplots that compare the data for all modes of transportation for various destinations listed below</h5>
+      
+      <p>Minneapolis:</p>
+      <iframe src="MIIIIIALLbarplot1.html" width="100%" height="800" frameBorder="0"></iframe>
+
+      <p>The bar plots suggest that taking an airplane would be the best transportation for this journey is airplane as the emissions per passenger are almost similar where as the time taken differs by 6 hours</p>
+      <p>If the user is willing to be more environmentally economical, they can choose to take the public transport overnight as that would be a 12 hour journey but with relatively very low emissions per passenger</p>
+
+      <p>Cincinnati:</p>
+      <iframe src="CincinnatiALLbarplot1.html" width="100%" height="800" frameBorder="0"></iframe>
+
+      <p>The bar plots show that the all modes of transportation have relatively the same distace, however, the distance by airplane is approximately 80km shorter than the other distances. </p>
+      <p>Although bicycling will not have any emission of CO2, 20 hours of bicycling is too much time for an average person. So it is not a viable option.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+     </body>
+</html>
